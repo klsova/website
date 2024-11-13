@@ -8,6 +8,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  flex-direction: column;
 }
 
 @keyframes gradient {
@@ -25,6 +26,22 @@ body {
 h1 {
   color: lightgray;
   text-align: left;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  letter-spacing: .15em;
+  animation: typing 1s steps(13, end), blink-caret .75s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0}
+  to { width: 40% ;}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent}
+  50% {border-color: orange;}
 }
 
 p {

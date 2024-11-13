@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import linkedinLogo from './assets/linkedin.png'
 import githubLogo from './assets/github.png'
+import discordLogo from './assets/discord.png'
+import telegramLogo from './assets/telegram.png'
 import './App.css'
 
 function App() {
@@ -19,6 +21,12 @@ function App() {
             </a>
             <a href="https://github.com/klsova" target="_blank" rel="noopener noreferrer">
               <img src={githubLogo} alt="GitHub" className='logo' />
+            </a>
+            <a href="https://discord.com/users/250694116751572992">
+              <img src={discordLogo} alt="Discord" className='logo' />
+            </a>
+            <a href="https://t.me/kalleleonard">
+              <img src={telegramLogo} alt="Telegram" className='logo' />
             </a>
           </div>
         </div>
