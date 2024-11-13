@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import linkedinLogo from './assets/linkedin.png'
+import githubLogo from './assets/github.png'
 import './App.css'
 
 function App() {
@@ -8,26 +8,20 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <h1>Kalle Sova</h1>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          3. vuoden tietotekniikan opiskelija sekä järjestöaktiivi
         </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <div className="logo-container">
+          <div className='logos'>
+            <a href="https://www.linkedin.com/in/kalle-sova-5b4616292/" target='_blank' rel='noopener noreferrer'>
+              <img src={linkedinLogo} alt="LinkedIn" className='logo' />
+            </a>
+            <a href="https://github.com/klsova" target="_blank" rel="noopener noreferrer">
+              <img src={githubLogo} alt="GitHub" className='logo' />
+            </a>
+          </div>
+        </div>
     </>
   )
 }
