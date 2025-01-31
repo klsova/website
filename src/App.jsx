@@ -6,7 +6,11 @@ import telegramLogo from './assets/telegram.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  }
 
   return (
     <>
@@ -30,6 +34,16 @@ function App() {
             </a>
           </div>
         </div>
+        <div className="dropdownmenu">
+          <button className="ddbutton" onClick={toggleDropdown}>My porftolio</button>
+          {dropdownOpen && (
+          <div className="dropdown-content">
+            <a href="https://junction2024-zeta.vercel.app/">CivSwipe</a>
+            <a href="https://github.com/klsova/plasettaja">Plasettaja</a>
+            <a href="#project3">Project 3</a>
+        </div>
+        )}
+      </div>
     </>
   )
 }
