@@ -19,9 +19,9 @@ function App() {
           <button className="ddbutton" onClick={toggleDropdown}>My portfolio</button>
           {dropdownOpen && (
           <div className="dropdown-content">
-            <a href="https://junction2024-zeta.vercel.app/">CivSwipe</a>
+            <a href="https://github.com/klsova/civswipe">CivSwipe</a>
             <a href="https://github.com/klsova/plasettaja">Plasettaja</a>
-            <a href="#project3">Project 3</a>
+            <a href="https://github.com/klsova/website">This site</a>
         </div>
         )}
         </div>
@@ -34,6 +34,7 @@ function App() {
             <div className='third'><div>Techie</div></div>
           </section>
           <div className="logo-container">
+            <p>My socials:</p>
             <div className='logos'>
               <a href="https://www.linkedin.com/in/kalle-sova-5b4616292/" target='_blank' rel='noopener noreferrer'>
                 <img src={linkedinLogo} alt="LinkedIn" className='logo' />

@@ -3,7 +3,7 @@
 body {
   font-family: 'Roboto';
   background-color: #131417;
-  background: linear-gradient(45deg, #202020, #180029);
+  background: linear-gradient(45deg, #202020, #5f5f5f);
   background-size: 400%, 400%;
   animation: gradient 15s ease infinite;
   display: flex;
@@ -58,8 +58,8 @@ body {
 .ddbutton {
   background-color: rgb(20, 20, 20);
   color: white;
-  padding: 32px;
-  font-size: 32px;
+  padding: 16px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
 }
@@ -165,27 +165,28 @@ p {
 }
 
 .logo-container {
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
   background-color: rgb(141, 141, 141);
   position: absolute;
-  bottom: 2%;
+  bottom: 1%;
   right: 1%;
   padding: 10px;
   border-radius: 20px;
-  width: 9%;
-  max-width: 500px;
+  max-width: 250px;
 }
 
 .logos {
   display: flex;
-  gap: 5px;
-  margin-top: 10px;
+  gap: 0px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: transform 0.6s;
 }
 
