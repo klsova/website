@@ -30,7 +30,7 @@ function App() {
             <div className="dropdown-content">
               <a href="https://github.com/klsova/civswipe">CivSwipe</a>
               <a href="https://github.com/klsova/plasettaja">Plasettaja</a>
-              <a href="https://github.com/klsova/pythonpeli">PythonPeli</a>
+              <a href="https://github.com/klsova/filer">Filer</a>
             </div>
           )}
         </div>
