@@ -65,8 +65,46 @@ function App() {
           <img src={KalleSova} alt="Kalle Sova" className='kalle' />
           <div id="about" class="about">
           <h1>About me</h1>
-          <p>I am a third-year Information Technology student, an active student organization member, and the President of Digit ry. I have experience in such skills as team coordination, event planning, budgetary responsibility and broad communication skills. I have skills in Python, Java, JavaScript with a base knowledge in React and Express based applications. I also have skills in Photoshop and other artistic skills as well basic understanding of economics and business through my minor studies. My guild teammates see me as an happy and active team player who succeeds under guidance, but equally capable of taking the initiative as I become familiar with tasks and responsibilities.</p>
+          <p>I am a third-year Information Technology student, an active student organization member, and the President of Digit ry. I have experience in such skills as team coordination, event planning, budgetary responsibility and broad communication skills.</p>
+          <p>I have skills in Python, Java, JavaScript with a base knowledge in React and Express based applications. I also have skills in Photoshop and other artistic skills as well basic understanding of economics and business through my minor studies.</p>
+          <p>My guild teammates see me as an happy and active team player who succeeds under guidance, but equally capable of taking the initiative as I become familiar with tasks and responsibilities.</p>
         </div>
+        </div>
+        <div className='ts-container'>
+          <h1>My tech stack</h1>
+          <div className='ts-grid'>
+            <div className='ts-item' data-tech='Python'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            </div>
+            <div className='ts-item' data-tech='Java'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            </div>
+            <div className='ts-item' data-tech='JavaScript'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            </div>
+            <div className='ts-item' data-tech='React'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            </div>
+            <div className='ts-item' data-tech='Express'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express" />
+            </div>
+            <div className='ts-item' data-tech='HTML'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+            </div>
+            <div className='ts-item' data-tech='CSS'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+            </div>
+            <div className='ts-item' data-tech='Photoshop'>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" />
+            </div>
+          </div>
+        </div>
+        <div className='projects-container'>
+          <h1>My projects</h1>
+          <p> Under construction </p>
+        </div>
+        <div className='footer'>
+          <p>© Kalle Sova 2025</p>
         </div>
       </main>
     </>
