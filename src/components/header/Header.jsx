@@ -8,6 +8,7 @@ import './Header.css';
 
 function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [theme, setTheme] = useState('dark');
 
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
@@ -21,18 +22,16 @@ function Header() {
   };
 
   const handleThemeChange = (event) => {
-    if (event.target.checked) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'light');
-    }
+    const newTheme = event.target.checked ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.documentElement.setAttribute('data-theme', newTheme);
   };
 
   return (
     <header className='header'>
       <div className='theme-switch-wrapper'>
         <label className="theme-switch" htmlFor="theme-switch-checkbox">
-          <input type="checkbox" id="theme-switch-checkbox" onChange={handleThemeChange} />
+        <input type="checkbox" id="theme-switch-checkbox" onChange={handleThemeChange} checked={theme === 'dark'} />
           <div className="slider round">
             <img src={themeicon} alt="Theme" className="theme-icon" />
           </div>
