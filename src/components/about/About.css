@@ -1,33 +1,50 @@
 .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-  }
-  
-  .about {
-    max-width: 600px;
-    text-align: left;
-  }
-  
-  .about h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .about p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
 
-  .kalle {
-    max-width: 300px;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
+.about {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 0%;
+  text-transform: uppercase;
+}
+  
+.about p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  margin-top: 0%;
+}
+
+.kalle {
+  max-width: 300px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.location-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  filter: invert(1) sepia(1) saturate(10) hue-rotate(-50deg) brightness(0.8);
+
+}
