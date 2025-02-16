@@ -6,14 +6,6 @@ import Projects from './components/projects/Projects';
 import TsContainer from './components/tscontainer/TsContainer';
 import './App.css';
 
-function toggleDarkMode() {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', newTheme);
-}
-
-document.getElementById('theme-toggle-button').addEventListener('click', toggleDarkMode);
-
 function App() {
   return (
     <div className="App">
