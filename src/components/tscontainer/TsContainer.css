@@ -1,0 +1,54 @@
+.ts-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  .ts-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .ts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 50px;
+  }
+  
+  .ts-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none; 
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .ts-item img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+  }
+  
+  .ts-item:hover {
+    transform: scale(1.1);
+  }
+  
+  .ts-item:hover:after {
+    content: attr(data-tech);
+    position: absolute;
+    bottom: -30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    white-space: nowrap;
+  }
