@@ -83,7 +83,6 @@ input:checked + .slider:before {
   position: relative;
   margin-top: 10%;
   margin-bottom: 10%;
-  left: 20%;
   font-size: 32px;
 }
   
