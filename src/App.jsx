@@ -12,8 +12,8 @@ function App() {
       <Header />
       <Main />
       <About />
-      <Projects />
       <TsContainer />
+      <Projects />
     </div>
   );
 }
