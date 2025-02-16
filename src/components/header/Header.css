@@ -1,140 +1,201 @@
 .header {
-    width: 100%;
-    padding: 10px 10px;
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1000;
-    text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
-  }
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-shadow: 0 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
+}
   
-  .header h1 {
-    color: lightgray;
-    margin: 0;
+.header h1 {
+  color: lightgray;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #a7a7a7;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #ffffff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #292929;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.theme-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 70px;
+  vertical-align: middle;
+}
+
+.KS p {
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  left: 20%;
+  font-size: 32px;
+}
+  
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+  
+.aboutme-button, .ddbutton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgb(20, 20, 20);
+}
+
+.dropdownmenu {
+  position: absolute;
+  right: 1%;
+  transform: translateX(-50%);
+  margin-top: 5px;
+  z-index: 1000;
+}
+  
+.dropdown-content {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  background-color: rgb(20, 20, 20);
+  min-height: 160px;
+  min-width: 160px;
+  top: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  animation: slideDown 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  transform-origin: top;
+  overflow: hidden;
+  border-radius: 8px;
+  right: 1%;
+}
+  
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+.dropdown-content a {
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s, transform 0.3s;
+}
+  
+.dropdown-content a:hover {
+  background-color: rgb(50, 50, 50);
+  transform: translateX(5px);
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #2c003d;
+}
+
+.logo-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 7px;
+  position: absolute;
+  top: 10px;
+  right: 300px;
+}
+ 
+.logos {
+  display: flex;
+  gap: 20px;
+}
+  
+.logo {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.6s;
+}
+  
+.logo:hover {
+  transform: scale(1.15);
+  filter: blur(1.2);
+}
+  
+@media (max-width: 600px) {
+  h1 {
     font-size: 1.5em;
   }
-
-  .KS p {
-    position: relative;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    left: 20%;
-    font-size: 32px;
+  
+  p {
+    font-size: 2.1vw;
   }
   
-  .button-container {
-    display: flex;
-    gap: 20px;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 20px;
-  }
-  
-  .aboutme-button, .ddbutton {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: rgb(20, 20, 20);
-  }
-
-  .dropdownmenu {
-    position: absolute;
-    right: 1%;
-    transform: translateX(-50%);
-    margin-top: 5px;
-    z-index: 1000;
-  }
-  
-  .dropdown-content {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: rgb(20, 20, 20);
-    min-height: 160px;
-    min-width: 160px;
-    top: 100%;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    animation: slideDown 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
-    transform-origin: top;
-    overflow: hidden;
-    border-radius: 8px;
-    right: 1%;
-  }
-  
-  @keyframes slideDown {
-    from {
-      max-height: 0;
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      max-height: 500px;
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: rgb(50, 50, 50);
-    transform: translateX(5px);
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    background-color: #2c003d;
-  }
-
-  .logo-container {
-    display: flex;
-    gap: 20px;
-    margin-top: 7px;
-    position: absolute;
-    top: 10px;
-    right: 300px;
-  }
-  
-  .logos {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-    transition: transform 0.6s;
-  }
-  
-  .logo:hover {
-    transform: scale(1.15);
-    filter: blur(1.2);
-  }
-  
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 1.5em;
-    }
-  
-    p {
-      font-size: 2.1vw;
-    }
-  
-    .logo {
-      width: 80px;
-      height: 80px;
-    }
-  }
+.logo {
+  width: 80px;
+  height: 80px;
+}
+}

@@ -3,6 +3,7 @@ import linkedinLogo from '../../assets/linkedin.png';
 import githubLogo from '../../assets/github.png';
 import discordLogo from '../../assets/discord.png';
 import telegramLogo from '../../assets/telegram.png';
+import themeicon from '../../assets/theme-icon.png';
 import './Header.css';
 
 function Header() {
@@ -19,8 +20,24 @@ function Header() {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const handleThemeChange = (event) => {
+    if (event.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+  };
+
   return (
     <header className='header'>
+      <div className='theme-switch-wrapper'>
+        <label className="theme-switch" htmlFor="theme-switch-checkbox">
+          <input type="checkbox" id="theme-switch-checkbox" onChange={handleThemeChange} />
+          <div className="slider round">
+            <img src={themeicon} alt="Theme" className="theme-icon" />
+          </div>
+        </label>
+      </div>
       <div className='KS'>
         <p>KS.</p>
       </div>
