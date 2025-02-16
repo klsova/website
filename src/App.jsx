@@ -1,24 +1,36 @@
 import { useEffect } from 'react';
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/main/Main';
-import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import TsContainer from './components/tscontainer/TsContainer';
+import About from './components/about/About';
 import './App.css';
 
 function App() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', 'dark');
   }, []);
+
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <About />
-      <TsContainer />
-      <Projects />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Main />
+              <TsContainer />
+              <Projects />
+            </>
+          } />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/tscontainer" element={<TsContainer />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

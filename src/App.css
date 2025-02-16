@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-/*font-family: Scto, Helvetica Neue, Helvetica, sans-serif;*/
-
-
 :root {
   --background-color: #bdbdbd;
   --text-color: #000000;
 }
 
 [data-theme="dark"] {
-  --background-color: #3f3f3f;
+  --background-color: #1b1b1b;
   --text-color: #ffffff;
 }
 
@@ -18,7 +15,7 @@ html, body {
   font-family: 'Roboto';
   background-color: var(--background-color);
   color: var(--text-color);
-  height: 200%;
+  height: 160%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;

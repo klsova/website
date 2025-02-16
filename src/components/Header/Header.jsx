@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import linkedinLogo from '../../assets/linkedin.png';
 import githubLogo from '../../assets/github.png';
 import discordLogo from '../../assets/discord.png';
@@ -10,17 +11,6 @@ function Header() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   const handleThemeChange = (event) => {
     const newTheme = event.target.checked ? 'dark' : 'light';
     setTheme(newTheme);
@@ -31,18 +21,15 @@ function Header() {
     <header className='header'>
       <div className='theme-switch-wrapper'>
         <label className="theme-switch" htmlFor="theme-switch-checkbox">
-        <input type="checkbox" id="theme-switch-checkbox" onChange={handleThemeChange} checked={theme === 'dark'} />
+          <input type="checkbox" id="theme-switch-checkbox" onChange={handleThemeChange} checked={theme === 'dark'} />
           <div className="slider round">
             <img src={themeicon} alt="Theme" className="theme-icon" />
           </div>
         </label>
       </div>
-      <div className='KS'>
-        <p>KS.</p>
-      </div>
       <div className='button-container'>
-        <button className='aboutme-button' onClick={scrollToAbout}>About me</button>
-        <button className='ddbutton' onClick={toggleDropdown}>My projects</button>
+        <Link to="/about" className='aboutme-button'>About me</Link>
+        <button className='ddbutton' onClick={() => setDropdownOpen(!dropdownOpen)}>My projects</button>
         {dropdownOpen && (
           <div className="dropdown-content">
             <a href="https://github.com/klsova/civswipe">CivSwipe</a>
