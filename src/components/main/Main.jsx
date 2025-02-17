@@ -3,7 +3,7 @@ import linkedinLogo from '../../assets/linkedin.png';
 import githubLogo from '../../assets/github.png';
 import discordLogo from '../../assets/discord.png';
 import telegramLogo from '../../assets/telegram.png';
-import KalleSova from '../../assets/kallesova.png';
+import KalleSova from '../../assets/KalleSova.png';
 import Location from '../../assets/location-icon.png';
 import './Main.css';
 
