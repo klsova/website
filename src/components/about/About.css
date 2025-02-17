@@ -1,0 +1,15 @@
+.about h1 {
+    font-family:Arial Bold, Helvetica,sans-serif;
+    font-size: 5em;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 5px white;
+}
+
+.about {
+    font-size: 1em;
+    text-align: left;
+    align-items: center;
+    justify-content: center;    
+    margin-top: 30%;
+    max-width: 600px;
+}
