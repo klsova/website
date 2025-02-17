@@ -4,7 +4,7 @@ This is will probably always be a WIP as I am planning to implement more things 
 
  ~~The website is currently deployed through Azure as a static web app.~~ The website is currently deployed through Vercel.
 
-You can visit the webiste through this link: [www.kallesova.fi](https://www.kallesova.fi/)
+You can visit the website through this link: [www.kallesova.fi](https://www.kallesova.fi/)
 
 # TODO:
  
