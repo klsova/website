@@ -88,12 +88,12 @@
   width: 40px;
   height: 40px;
   transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(100%) brightness(0.8);
+  filter: invert(1) grayscale(100%) brightness(0.8);
 }
 
 .logo:hover {
   transform: scale(1.1);
-  filter: grayscale(0%) brightness(1);
+  filter: invert(1) grayscale(0%) brightness(1);
 }
 
 @media (max-width: 600px) {

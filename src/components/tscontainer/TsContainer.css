@@ -1,6 +1,5 @@
 .ts-container {
     background-color: #222;
-    margin-top: 50px;
     border-radius: 10px;
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -31,6 +30,7 @@
     border: none; 
     color: #ffffff;
     transition: transform 0.3s ease;
+    font-size: 3em;
   }
   
   .ts-item img {
@@ -51,6 +51,6 @@
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 0.9em;
+    font-size: 0.3em;
     white-space: nowrap;
   }
