@@ -14,6 +14,13 @@
   text-transform: uppercase;
 }
 
+.project-link {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px 0;
+  text-decoration: none;
+}
+
 .project-box {
   position: relative;
   display: flex;
