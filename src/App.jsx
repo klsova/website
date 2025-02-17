@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Main from './components/main/Main';
 import Projects from './components/projects/Projects';
 import TsContainer from './components/tscontainer/TsContainer';
 import About from './components/about/About';
+import Footer from './components/footer/Footer';
 import './App.css';
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/tscontainer" element={<TsContainer />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
