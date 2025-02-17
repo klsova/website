@@ -18,7 +18,7 @@
 }
 
 .main h1 {
-  font-size: 2em;
+  font-size: 2.2em;
   margin-bottom: 0%;
   text-transform: uppercase;
 }
@@ -27,8 +27,14 @@
   font-family: Satoshi, sans-serif;
   font-size: 1.1em;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   margin-top: 0%;
+}
+
+.main-text p {
+  text-align: left;
+  font-size: 0.9em;
+  margin-bottom: 0px;
 }
 
 .kalle {

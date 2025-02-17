@@ -11,7 +11,11 @@ function Main() {
         <h1>Kalle Sova</h1>
         <div className='location'>
           <img src={Location} alt="location-icon" className='location-icon'/>
-          <p>Turku, Finland</p>
+          <p>Turku, Finland</p> 
+        </div>
+        <div className='main-text'>
+          <p>3rd year IT student</p>
+          <p>Full Stack Enthusiast</p>
         </div>
       </div>
     </div>
