@@ -11,20 +11,15 @@
 }
 
 
-html, body {
-  font-family: 'Roboto';
-  background-color: var(--background-color);
-  color: var(--text-color);
-  height: 160%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
