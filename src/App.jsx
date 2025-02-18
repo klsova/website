@@ -6,6 +6,7 @@ import Projects from './components/projects/Projects';
 import TsContainer from './components/tscontainer/TsContainer';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
+import Greetings from './components/greeting/Greeting'
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <Greetings />
         <Routes>
           <Route path="/" element={
             <>

@@ -1,0 +1,15 @@
+.greetings {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10vh;
+}
+
+.greetings-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    filter: brightness(0.6);
+
+}
