@@ -6,20 +6,32 @@
 }
 
 [data-theme="dark"] {
-  --background-color: #1b1b1b;
+  --background-color: #242424;
   --text-color: #ffffff;
 }
 
 
-html {
-  height: 100%;
-}
-
-body {
+html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
   margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  z-index: -1;
+  transition: background-color 0.3s ease-in-out;
 }
