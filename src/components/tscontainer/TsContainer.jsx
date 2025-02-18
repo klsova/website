@@ -4,7 +4,11 @@ import './TsContainer.css';
 function TsContainer() {
   return (
     <div className='ts-container'>
-      <h1>My tech stack</h1>
+      <div className='ts-text'>
+      <p>My</p>
+      <p>Tech</p>
+      <p>Stack</p>
+      </div>
       <div className='ts-grid'>
         <div className='ts-item' data-tech='Python'>
           <i className="devicon-python-plain"></i>
