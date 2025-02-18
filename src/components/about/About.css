@@ -1,8 +1,8 @@
 .about h1 {
-    font-family:Arial Bold, Helvetica,sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 5em;
     text-decoration-line: underline;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 1px 1px 2px rgb(61, 61, 61);
 }
 
 .about {
