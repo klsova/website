@@ -83,7 +83,6 @@ input:checked + .slider:before {
   display: flex;
   gap: 5px;
   justify-content: flex-end;
-  align-items: center;
   margin-right: 20px;
 }
   
@@ -101,7 +100,6 @@ input:checked + .slider:before {
   position: absolute;
   right: 1%;
   transform: translateX(-50%);
-  margin-top: 5px;
   z-index: 1000;
 }
   
