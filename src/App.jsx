@@ -18,10 +18,10 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Greetings />
         <Routes>
           <Route path="/" element={
             <>
+              <Greetings />
               <Main />
               <TsContainer />
               <Projects />
