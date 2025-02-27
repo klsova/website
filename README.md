@@ -2,7 +2,7 @@
 
 This is will probably always be a WIP as I am planning to implement more things as I learn them.
 
-Utilizes React and React Router. Made with pure JS, HTML and CSS.
+Utilizes React and React Router. Made with JS, HTML and CSS.
 
  ~~The website is currently deployed through Azure as a static web app.~~ The website is currently deployed through Vercel.
 
