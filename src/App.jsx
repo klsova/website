@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import Header from './components/Header/Header';
 import Main from './components/main/Main';
 import Projects from './components/projects/Projects';
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <Router>
+      <Analytics />
       <div className="App">
         <Header />
         <Routes>
