@@ -13,7 +13,7 @@ function Main() {
       <div className='main'>
         <div className='main-text'>
           <h1>Kalle Sova</h1>
-          <p className='subtitle'>3rd Year IT Student | Full Stack Enthusiast</p>
+          <p className='subtitle'>4th Year Data-Analytics Student | BSc. in ICT </p>
           <div className='location'>
             <img src={Location} alt='Location icon' className='location-icon' />
             <p>Turku, Finland</p>
