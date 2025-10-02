@@ -26,6 +26,7 @@ function Header() {
       <div className='button-container'>
         <Link to="/" className='home-button'>Home</Link>
         <Link to="/about" className='aboutme-button'>About me</Link>
+        <Link to="/cv" className='cv-button'>CV</Link>
         <button className='ddbutton' onClick={() => setDropdownOpen(!dropdownOpen)}>My projects</button>
         {dropdownOpen && (
           <div className="dropdown-content">

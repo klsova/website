@@ -8,6 +8,7 @@ import TsContainer from './components/tscontainer/TsContainer';
 import About from './components/about/About';
 import Footer from './components/footer/Footer';
 import Greetings from './components/greeting/Greeting'
+import Cv from './components/cv/Cv'
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/tscontainer" element={<TsContainer />} />
+          <Route path="/cv" element={<Cv />} />
         </Routes>
         <Footer />
       </div>

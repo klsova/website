@@ -86,7 +86,7 @@ input:checked + .slider:before {
   margin-right: 20px;
 }
   
-.aboutme-button, .ddbutton, .home-button {
+.aboutme-button, .ddbutton, .home-button, .cv-button {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
